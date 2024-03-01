@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+ body {
+  background-color: #131313;
+  color: #fff;
+
+  font-family: "Nunito Sans" /*"Yeseva One", serif*/;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+.slider {
+  margin: 50px auto;
+  max-width: 1200px;
+  padding: 0 15px;
+  position: relative;
+}
+
+.title-list {
+  max-width: 623px;
+  margin-bottom: 45px;
+  display: flex;
+  column-gap: 60px;
+  color: #e3b873;
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-right: 56px;
+}
+
+.title-list_item {
+  color: #ffffff;
+  opacity: .3;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  cursor: pointer;
+
+  font-family: "Yeseva One", serif;
+}
+
+.title-list_item--active {
+  position: relative;
+  color:#e3b873;
+  opacity: 1;
+}
+.title-list_item--active::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  top: 100%;
+  background-color: #e3b873;
+}
+.slider-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-inner__info {
+  max-width: 442px;
+  
+}
+.slider-title {
+  font-family: "Yeseva One", serif;
+  font-size: 27px;
+  line-height: 31px;
+  width: 100px;
+  text-transform: uppercase;
+  color: #e3b873;
+  margin-bottom: 34px;
+  letter-spacing: -7%;
+}
+.slider-text {
+  line-height: 190%;
+  margin-bottom: 42px;
+}
+.info__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  max-width: 400px;
+  column-gap: 30px;
+  row-gap: 35px;
+}
+.info__list-item {
+  min-width: 158px;
+}
+.info__list-title {
+  font-family: "Yeseva One", serif;
+  font-size: 18px;
+  line-height: 140%;
+  margin-bottom: 9px;
+  text-transform: uppercase;
+  color: #e3b873;
+}
+.info__list-text {
+  font-size: 13px;
+  line-height: 160%;
+}
+.slider-inner__img {
+  max-width: 679px;
+}
+.slider-inner__img img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.slider-nav {
+  display: flex;
+  column-gap: 30px;
+  position: absolute;
+  bottom: 0;
+}
+
+.arrow {
+  cursor: pointer;
+}
+
+.slider__dots {
+  display: flex;
+  column-gap: 17px;
+}
+
+.slider__dots-item {
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  opacity: 0.3;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: opacity 0.4s ease;
+}
+
+.slider__dots-item:hover,
+.active {
+  opacity: 1;
+}
+
+.none{
+    display: none;
+} 
